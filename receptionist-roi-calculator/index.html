@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Receptionist ROI Calculator | MetroAgentAI</title>
+  <meta name="description" content="Compare missed-call value with phone coverage cost using MetroAgentAI's free receptionist ROI calculator for local businesses." />
+  <link rel="canonical" href="https://www.metroaiagent.com/receptionist-roi-calculator/" />
+  <link rel="stylesheet" href="/calculator.css" />
+</head>
+<body data-calculator="receptionist-roi">
+  <header class="wrap top">
+    <a class="brand" href="/">MetroAgent<span>AI</span></a>
+    <nav aria-label="Calculator navigation">
+      <a href="/">Home</a>
+      <a href="tel:+19515809058">Call or Text (951) 580-9058</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <p class="eyebrow">Receptionist ROI calculator</p>
+      <h1>Compare phone coverage cost with missed-call opportunity.</h1>
+      <p class="lead">Use this calculator to estimate recovered value from better phone coverage, then compare it with a monthly receptionist, answering service, or AI phone assistant cost. It is an estimate, not a guarantee.</p>
+      <p class="note"><strong>Want help with missed calls?</strong> Call or text MetroAgentAI at <a href="tel:+19515809058">(951) 580-9058</a>.</p>
+    </section>
+
+    <section class="wrap grid" aria-label="Receptionist ROI calculator">
+      <form class="panel" onsubmit="return false;">
+        <div class="form-grid">
+          <label>Monthly phone coverage cost
+            <input id="monthlyCost" type="number" min="0" value="497" inputmode="decimal" />
+            <small>Estimated monthly cost for a receptionist, answering service, or AI phone assistant.</small>
+          </label>
+          <label>Missed calls per month
+            <input id="missedCalls" type="number" min="0" value="40" inputmode="numeric" />
+            <small>Calls that go unanswered, hit voicemail, or are returned too late.</small>
+          </label>
+          <label>Expected booking rate
+            <input id="bookingRate" type="number" min="0" max="100" value="40" inputmode="decimal" />
+            <small>Percent of reached callers that could become booked jobs.</small>
+          </label>
+          <label>Average job value
+            <input id="averageJob" type="number" min="0" value="425" inputmode="decimal" />
+            <small>Use a conservative average ticket or service value.</small>
+          </label>
+          <label class="full">Percent of missed calls recovered
+            <input id="recoveredShare" type="number" min="0" max="100" value="55" inputmode="decimal" />
+            <small>Estimate what share of missed calls better phone coverage could catch or recover.</small>
+          </label>
+        </div>
+        <p class="note">This tool uses simple math for planning conversations. It does not promise that any business will receive, book, or collect this amount.</p>
+      </form>
+
+      <aside class="panel result" aria-live="polite">
+        <p class="eyebrow">Estimated recovered value</p>
+        <div class="total" data-monthly>$0</div>
+        <div class="stat"><span>Potential recovered jobs / month</span><strong data-jobs>0</strong></div>
+        <div class="stat"><span>Estimated net monthly value</span><strong data-after-hours>$0</strong></div>
+        <div class="stat"><span>Estimated annualized net value</span><strong data-yearly>$0</strong></div>
+        <div class="stat"><span>Simple ROI multiple</span><strong data-roi>0x</strong></div>
+        <a class="cta" href="tel:+19515809058">Call or Text (951) 580-9058</a>
+        <a class="cta" href="mailto:balestrierigary9@yahoo.com?subject=MetroAgentAI%20receptionist%20ROI%20calculator">Email MetroAgentAI</a>
+      </aside>
+    </section>
+
+    <section class="wrap copy">
+      <h2>How to use this estimate</h2>
+      <p>This calculator is designed for a practical conversation: how many calls are missed, what a job is worth, and whether better phone coverage may pay for itself.</p>
+      <ul>
+        <li>Use conservative recovered-call assumptions.</li>
+        <li>Include only realistic booking rates.</li>
+        <li>Calculator results are informational only and do not guarantee revenue.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">© 2026 MetroAgentAI. Calculator estimates are informational only. Call or text <a href="tel:+19515809058">(951) 580-9058</a>.</footer>
+  <script src="/calculator.js" defer></script>
+</body>
+</html>
