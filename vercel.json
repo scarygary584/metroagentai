@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": true,
+  "rewrites": [
+    { "source": "/", "destination": "/home/index.html" },
+    { "source": "/missed-call-calculator-plumbers/", "destination": "/missed-call-calculator-plumbers/page.html" }
+  ]
+}
