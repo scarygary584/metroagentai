@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>After-Hours Call Value Calculator | MetroAgentAI</title>
+  <meta name="description" content="Estimate the monthly value of missed calls outside normal business hours with MetroAgentAI's free calculator." />
+  <link rel="canonical" href="https://www.metroaiagent.com/after-hours-call-value-calculator/" />
+  <link rel="stylesheet" href="/calculator.css" />
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="/">MetroAgent<span>AI</span></a>
+    <nav aria-label="Calculator navigation">
+      <a href="/">Home</a>
+      <a href="tel:+19515809058">Call or Text (951) 580-9058</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <p class="eyebrow">After-hours call value calculator</p>
+      <h1>See what missed calls after closing time might be worth.</h1>
+      <p class="lead">This calculator estimates possible monthly opportunity from calls missed outside normal business hours, using booking rate, average job value, and an optional value lift. It is an estimate, not a guarantee.</p>
+      <p class="note"><strong>Want help with missed calls?</strong> Call or text MetroAgentAI at <a href="tel:+19515809058">(951) 580-9058</a>.</p>
+    </section>
+
+    <section class="wrap grid" aria-label="After-hours call value calculator">
+      <form class="panel" onsubmit="return false;">
+        <div class="form-grid">
+          <label>Missed calls outside normal hours
+            <input id="missedCalls" type="number" min="0" value="22" inputmode="numeric" />
+            <small>Calls missed after closing, weekends, or while the team is busy.</small>
+          </label>
+          <label>Expected booking rate
+            <input id="bookingRate" type="number" min="0" max="100" value="38" inputmode="decimal" />
+            <small>Percent of callers that could become booked jobs.</small>
+          </label>
+          <label>Average job value
+            <input id="averageJob" type="number" min="0" value="450" inputmode="decimal" />
+            <small>Use a conservative average ticket or service value.</small>
+          </label>
+          <label>Higher-value call share
+            <input id="emergencyShare" type="number" min="0" max="100" value="100" inputmode="decimal" />
+            <small>Use 100% if all calls in this estimate are outside normal hours.</small>
+          </label>
+          <label class="full">Optional value lift
+            <input id="emergencyLift" type="number" min="0" max="300" value="25" inputmode="decimal" />
+            <small>Optional extra value. Set to 0 if not applicable.</small>
+          </label>
+        </div>
+        <p class="note">This tool uses simple math for planning conversations. It does not promise that any business will receive, book, or collect this amount.</p>
+      </form>
+
+      <aside class="panel result" aria-live="polite">
+        <p class="eyebrow">Estimated opportunity</p>
+        <div class="total" data-monthly>$0</div>
+        <div class="stat"><span>Potential booked jobs</span><strong data-jobs>0</strong></div>
+        <div class="stat"><span>Estimated extra value</span><strong data-after-hours>$0</strong></div>
+        <div class="stat"><span>Estimated annualized opportunity</span><strong data-yearly>$0</strong></div>
+        <a class="cta" href="tel:+19515809058">Call or Text (951) 580-9058</a>
+        <a class="cta" href="mailto:balestrierigary9@yahoo.com?subject=MetroAgentAI%20call%20value%20calculator">Email MetroAgentAI</a>
+      </aside>
+    </section>
+
+    <section class="wrap copy">
+      <h2>How to use this estimate</h2>
+      <p>Calls outside normal business hours can be easy to miss. This calculator gives local service businesses a simple way to compare phone-coverage cost against possible missed-call value.</p>
+      <ul>
+        <li>Use realistic missed-call counts from voicemail or call logs.</li>
+        <li>Keep booking rate conservative.</li>
+        <li>Calculator results are informational only and do not guarantee revenue.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="wrap footer">© 2026 MetroAgentAI. Calculator estimates are informational only. Call or text <a href="tel:+19515809058">(951) 580-9058</a>.</footer>
+  <script src="/calculator.js" defer></script>
+</body>
+</html>
